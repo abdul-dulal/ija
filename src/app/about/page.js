@@ -8,17 +8,18 @@ import Team from "@/components/Team";
 import Achievements from "@/components/Achievements";
 import CTA from "@/components/CTA";
 import { pageImages } from "@/data/pages";
+import International from "@/components/IJA";
 
 export const metadata = {
-  title: "About IOJN — International Online Journal Network",
+  title: "About IJA — International journal Alliance",
   description:
-    "Learn about IOJN's mission, vision, values and journey since 2020 as an innovative research support centre.",
+    "Learn about IJA's mission, vision, values and journey since 2020 as an innovative research support centre.",
 };
 
 export default function AboutPage() {
   return (
     <PageShell>
-      <PageHero
+      {/* <PageHero
         eyebrow="About Us"
         title="Research With Purpose,"
         highlight="Impact With Integrity"
@@ -31,13 +32,14 @@ export default function AboutPage() {
           { label: "Objectives", href: "#objectives" },
           { label: "Team", href: "#team" },
         ]}
-      />
+      /> */}
+      <International />
       <About />
-      <MissionVision />
+      {/* <MissionVision /> */}
       <Journey />
       {/* <Objectives /> */}
       {/* <Team /> */}
-      <Achievements />
+      {/* <Achievements /> */}
       {/* <CTA /> */}
     </PageShell>
   );

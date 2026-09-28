@@ -22,17 +22,29 @@ export default function About() {
     gsap.to(scope.querySelector("[data-parallax]"), {
       yPercent: -14,
       ease: "none",
-      scrollTrigger: { trigger: scope, start: "top bottom", end: "bottom top", scrub: true },
+      scrollTrigger: {
+        trigger: scope,
+        start: "top bottom",
+        end: "bottom top",
+        scrub: true,
+      },
     });
   });
 
   return (
-    <section id="about" ref={ref} className="section-y relative overflow-hidden bg-white">
+    <section
+      id="about"
+      ref={ref}
+      className="section-y relative overflow-hidden bg-white"
+    >
       <div className="container-x grid items-center gap-16 lg:grid-cols-2 lg:gap-20">
         {/* Imagery */}
         <div className="relative pb-16 sm:pb-20 lg:pr-10">
-          <div className="absolute -top-6 -left-6 hidden h-40 w-40 rounded-[2rem] border border-dashed border-teal/30 sm:block" />
-          <div data-reveal="img" className="relative aspect-[4/5] overflow-hidden rounded-[1.75rem] bg-mist shadow-lift">
+          <div className="absolute -top-6 -left-6 hidden h-40 w-40 rounded-4xl border border-dashed border-teal/30 sm:block" />
+          <div
+            data-reveal="img"
+            className="relative aspect-4/5 overflow-hidden rounded-[1.75rem] bg-mist shadow-lift"
+          >
             <Image
               src={images.aboutMain}
               alt="Scientists working together in a research laboratory"
@@ -47,7 +59,13 @@ export default function About() {
             className="absolute right-0 bottom-0 w-[52%] overflow-hidden rounded-[1.5rem] border-[6px] border-white shadow-lift sm:right-2"
           >
             <div className="relative aspect-[4/3.4]">
-              <Image src={images.aboutSecondary} alt="Researchers collaborating" fill sizes="30vw" className="object-cover" />
+              <Image
+                src={images.aboutSecondary}
+                alt="Researchers collaborating"
+                fill
+                sizes="30vw"
+                className="object-cover"
+              />
             </div>
           </div>
 
@@ -55,32 +73,46 @@ export default function About() {
             data-reveal="scale"
             className="absolute top-10 -right-2 rounded-2xl bg-brand-gradient p-5 text-white shadow-lift sm:right-2 lg:-right-2"
           >
-            <p className="font-display text-4xl font-extrabold">{new Date().getFullYear() - site.founded}+</p>
-            <p className="mt-1 max-w-[7rem] text-xs leading-snug text-white/75">Years advancing impactful research</p>
+            <p className="font-display text-4xl font-extrabold">
+              {new Date().getFullYear() - site.founded}+
+            </p>
+            <p className="mt-1 max-w-[7rem] text-xs leading-snug text-white/75">
+              Years advancing impactful research
+            </p>
           </div>
         </div>
 
         {/* Copy */}
         <div>
-          <span data-reveal="up" className="eyebrow">Who We Are</span>
+          <span data-reveal="up" className="eyebrow">
+            Who We Are
+          </span>
           <h2 data-reveal="up" className="heading-lg mt-4">
-            Building a Stronger Future Through Research &amp; Innovation
+            International Journal Alliance (IJA)
           </h2>
           <p data-reveal="up" className="lead mt-6">
-            Established in {site.founded}, the {site.fullName} (IOJN) is an innovative research support
-            centre dedicated to impactful, benevolent and trend-changing research. We partner with
-            researchers, universities and organizations to design, conduct and publish work that
-            improves lives.
+            Established to advance meaningful research and scholarly
+            collaboration, the International Journal Alliance (IJA) is a global
+            research platform committed to supporting impactful, innovative and
+            knowledge-driven work. We collaborate with researchers, academic
+            institutions and organizations to promote quality research,
+            facilitate knowledge exchange and contribute to positive change
+            across communities.
           </p>
           <p data-reveal="up" className="mt-4 leading-relaxed text-slate">
-            Our multidisciplinary team spans public health, environmental health and social science —
-            combining methodological rigour with a commitment to human capacity development and open
-            knowledge sharing across borders.
+            Our multidisciplinary approach brings together researchers and
+            professionals from diverse fields, fostering methodological
+            excellence, collaboration and open knowledge sharing. Through
+            research, publication and capacity development, the International
+            Journal Alliance aims to connect ideas.
           </p>
 
           <ul data-reveal="up" className="mt-8 grid gap-3 sm:grid-cols-2">
             {pillars.map((p) => (
-              <li key={p} className="flex items-center gap-3 text-sm font-medium text-ink">
+              <li
+                key={p}
+                className="flex items-center gap-3 text-sm font-medium text-ink"
+              >
                 <span className="grid h-6 w-6 shrink-0 place-items-center rounded-full bg-teal/10 text-teal">
                   <Check className="h-3.5 w-3.5" strokeWidth={3} />
                 </span>
@@ -89,11 +121,14 @@ export default function About() {
             ))}
           </ul>
 
-          <figure data-reveal="up" className="mt-10 flex gap-4 rounded-2xl border-l-2 border-teal bg-offwhite p-5">
+          <figure
+            data-reveal="up"
+            className="mt-10 flex gap-4 rounded-2xl border-l-2 border-teal bg-offwhite p-5"
+          >
             <Quote className="h-6 w-6 shrink-0 text-teal" />
             <blockquote className="text-sm leading-relaxed text-ink italic">
-              “Our mission is to make rigorous research accessible to every scholar and institution
-              striving to create positive change.”
+              “Our mission is to make rigorous research accessible to every
+              scholar and institution striving to create positive change.”
             </blockquote>
           </figure>
 

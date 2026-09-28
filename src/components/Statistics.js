@@ -12,18 +12,27 @@ export default function Statistics() {
   useGsap(ref, animateCounters);
 
   return (
-    <section ref={ref} aria-label="Key statistics" className="relative bg-white">
-      <div className="container-x relative -mt-10 lg:-mt-14">
+    <section
+      ref={ref}
+      aria-label="Key statistics"
+      className="relative bg-white"
+    >
+      <div className="container-x relative -mt-10 lg:-mt-14 bg-offwhite pt-10 pb-20">
+        <div>
+          <h2 className="text-3xl font-semibold text-center pb-10">
+            Our Achievement
+          </h2>
+        </div>
         <div
           data-reveal="up"
-          className="grid grid-cols-2 overflow-hidden rounded-3xl border border-line bg-white shadow-lift lg:grid-cols-4"
+          className="grid grid-cols-2 overflow-hidden  lg:grid-cols-4 gap-3 "
         >
           {stats.map((s, i) => {
             const StatIcon = statIcons[i];
             return (
               <div
                 key={s.label}
-                className={`group relative p-6 transition-colors duration-500 hover:bg-offwhite sm:p-8 lg:p-10 ${
+                className={`group relative p-6 transition-colors duration-500 hover:bg-white sm:p-8 lg:p-10 rounded-3xl border border-line bg-  ${
                   i % 2 === 0 ? "border-r border-line" : ""
                 } ${i < 2 ? "border-b border-line lg:border-b-0" : ""} ${i === 1 ? "lg:border-r" : ""}`}
               >

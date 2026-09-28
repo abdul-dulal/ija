@@ -6,18 +6,19 @@ import Methodologies from "@/components/research/Methodologies";
 import GlobalNetwork from "@/components/GlobalNetwork";
 import CTA from "@/components/CTA";
 import { pageImages } from "@/data/pages";
+import Projects from "@/components/Projects";
 
 export const metadata = {
-  title: "Research — IOJN",
+  title: "Research — IJA",
   description:
-    "Explore IOJN's research focus areas, featured projects and methodologies in public health, environmental health and social development.",
+    "Explore IJA's research focus areas, featured projects and methodologies in public health, environmental health and social development.",
 };
 
 export default function ResearchPage() {
   return (
     <PageShell>
       <PageHero
-        eyebrow="Research"
+        eyebrow="Project"
         title="Evidence That"
         highlight="Shapes the Future"
         text="From community health to climate exposure, our research generates the evidence decision-makers need to act with confidence."
@@ -30,10 +31,11 @@ export default function ResearchPage() {
           { label: "Network", href: "#network" },
         ]}
       />
-      <ResearchAreas />
-      <ResearchProjects />
+      <Projects />
+      {/* <ResearchAreas /> */}
+      {/* <ResearchProjects /> */}
       {/* <Methodologies /> */}
-      <GlobalNetwork />
+      {/* <GlobalNetwork /> */}
       {/* <CTA /> */}
     </PageShell>
   );

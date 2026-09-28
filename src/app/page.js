@@ -15,13 +15,15 @@ import GlobalNetwork from "@/components/GlobalNetwork";
 import CTA from "@/components/CTA";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import HomeHero from "@/components/HomeHero";
 
 export default function Home() {
   return (
     <>
       <Header />
       <main>
-        <Hero />
+        <HomeHero />
+        {/* <Hero /> */}
         <Statistics />
         <About />
         <Team />
