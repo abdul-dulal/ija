@@ -1,3 +1,7 @@
+import s01 from "@/app/assets/img/s01.jpg";
+import s02 from "@/app/assets/img/s02.jpg";
+import s03 from "@/app/assets/img/s03.jpg";
+
 const img = (id, w = 1200) =>
   `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=${w}&q=80`;
 
@@ -105,37 +109,37 @@ export const researchAreas = [
 
 export const services = [
   {
-    icon: "ClipboardList",
+    icon: s01,
     title: "Protocol Development",
     text: "Study design, sampling strategy, ethics documentation and a clear research plan.",
     tags: ["Study design", "Ethics"],
   },
   {
-    icon: "PenTool",
+    icon: s02,
     title: "Article Writing",
     text: "Manuscript preparation aligned with journal guidelines and academic standards.",
     tags: ["Manuscripts", "Editing"],
   },
   {
-    icon: "Search",
+    icon: s03,
     title: "Article Research",
     text: "Systematic literature review, methodology selection and evidence synthesis.",
     tags: ["Literature review", "Meta-analysis"],
   },
   {
-    icon: "ChartColumn",
+    icon: s01,
     title: "Data Analysis",
     text: "Statistical analysis, interpretation, visualization and publication-ready reporting.",
     tags: ["SPSS / R / Stata", "Visualization"],
   },
   {
-    icon: "Send",
+    icon: s02,
     title: "Publication Support",
     text: "Journal selection, submission, reviewer responses and end-to-end guidance.",
     tags: ["Submission", "Peer review"],
   },
   {
-    icon: "BookOpen",
+    icon: s03,
     title: "Journal Management",
     text: "Journal development, editorial workflows, indexing strategy and operations.",
     tags: ["Editorial", "Indexing"],

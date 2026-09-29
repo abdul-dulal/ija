@@ -23,16 +23,16 @@ export default function Home() {
       <Header />
       <main>
         <HomeHero />
-        {/* <Hero /> */}
+        <Hero />
         <Statistics />
         <About />
         <Team />
         <ResearchAreas />
-        {/* <Services /> */}
+        <Services />
         <ResearchProcess />
         {/* <WhyChooseUs /> */}
         {/* <Achievements /> */}
-        <Publications />
+        {/* <Publications /> */}
         {/* <Events /> */}
         {/* <Testimonials /> */}
         <GlobalNetwork />

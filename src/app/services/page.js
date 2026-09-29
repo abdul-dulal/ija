@@ -17,7 +17,7 @@ export const metadata = {
 export default function ServicesPage() {
   return (
     <PageShell>
-      <PageHero
+      {/* <PageHero
         eyebrow="Services"
         title="Expert Research Support"
         highlight="From Idea to Publication"
@@ -30,10 +30,10 @@ export default function ServicesPage() {
           { label: "Engagement", href: "#engagement" },
           { label: "FAQ", href: "#faq" },
         ]}
-      />
+      /> */}
       <Services />
       <ServiceDetails />
-      <ResearchProcess />
+      {/* <ResearchProcess /> */}
       {/* <EngagementModels /> */}
       {/* <FAQ items={serviceFaqs} tone="offwhite" text="Answers to the questions researchers ask us most often." /> */}
       {/* <CTA /> */}

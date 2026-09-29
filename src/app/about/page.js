@@ -33,8 +33,8 @@ export default function AboutPage() {
           { label: "Team", href: "#team" },
         ]}
       /> */}
-      <International />
       <About />
+      <International />
       {/* <MissionVision /> */}
       <Journey />
       {/* <Objectives /> */}

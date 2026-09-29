@@ -5,7 +5,7 @@ import stracture from "@/app/assets/img/stracture.png";
 import team from "@/app/assets/img/team-composition-1.png";
 const International = () => {
   return (
-    <div className="pt-32 container-x max-w-300">
+    <div className=" container-x max-w-300">
       <div>
         <h2 className="text-3xl font-semibold  pb-10 text-slate">
           Operational Structure of IJA

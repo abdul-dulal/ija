@@ -35,11 +35,11 @@ export default function About() {
     <section
       id="about"
       ref={ref}
-      className="section-y relative overflow-hidden bg-white"
+      className=" relative overflow-hidden bg-white"
     >
       <div className="container-x grid items-center gap-16 lg:grid-cols-2 lg:gap-20">
         {/* Imagery */}
-        <div className="relative pb-16 sm:pb-20 lg:pr-10">
+        <div className="relative  lg:pr-10">
           <div className="absolute -top-6 -left-6 hidden h-40 w-40 rounded-4xl border border-dashed border-teal/30 sm:block" />
           <div
             data-reveal="img"

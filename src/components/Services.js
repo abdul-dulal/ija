@@ -1,10 +1,11 @@
 "use client";
 
 import { useRef } from "react";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, icons } from "lucide-react";
 import { useGsap } from "@/lib/gsap";
 import { services } from "@/data/site";
 import { Icon, SectionHeading } from "./ui";
+import Image from "next/image";
 
 export default function Services() {
   const ref = useRef(null);
@@ -25,19 +26,20 @@ export default function Services() {
           eyebrow="Our Services"
           title={
             <>
-              Research Support <span className="text-gradient">From Idea to Publication</span>
+              We Provide{" "}
+              <span className="text-gradient">Superior Research Services</span>
             </>
           }
           text="Comprehensive, expert-led services that meet you wherever you are in the research lifecycle."
         />
 
-        <div className="mt-16 grid gap-px overflow-hidden rounded-[2rem] border border-line bg-line sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-16 grid gap-4 overflow-hidden   sm:grid-cols-2 lg:grid-cols-3">
           {services.map((s) => (
             <article
               key={s.title}
               data-reveal="fade"
               onMouseMove={onMove}
-              className="group relative bg-white p-8 transition-colors duration-500 hover:bg-offwhite sm:p-10"
+              className="group relative bg-white border border-line p-4 transition-colors duration-500 hover:bg-offwhite  rounded-2xl"
             >
               <span
                 className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
@@ -47,21 +49,11 @@ export default function Services() {
                 }}
               />
               <div className="relative">
-                <span className="relative grid h-14 w-14 place-items-center rounded-2xl bg-navy text-cyan shadow-soft transition-transform duration-500 group-hover:-translate-y-1 group-hover:rotate-[-6deg]">
-                  <Icon name={s.icon} className="h-6 w-6" strokeWidth={1.75} />
-                </span>
+                <Image className="rounded-xl" src={s.icon} alt={s.title} />
                 <h3 className="mt-7 text-xl font-bold">{s.title}</h3>
-                <p className="mt-3 text-[15px] leading-relaxed text-slate">{s.text}</p>
-                <div className="mt-6 flex flex-wrap gap-2">
-                  {s.tags.map((t) => (
-                    <span key={t} className="rounded-full bg-mist px-3 py-1 text-xs font-medium text-royal">
-                      {t}
-                    </span>
-                  ))}
-                </div>
-                <a href="/contact" className="link-arrow mt-8">
-                  Request this service <ArrowRight className="h-4 w-4" />
-                </a>
+                <p className="mt-3 text-[15px] leading-relaxed text-slate">
+                  {s.text}
+                </p>
               </div>
             </article>
           ))}
