@@ -382,9 +382,6 @@ export const serviceLinks = [
   "Journal Management",
 ];
 
-const portrait = (id) =>
-  `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&crop=faces&w=800&h=1000&q=80`;
-
 export const teamDepartments = [
   "All",
   "Leadership",
@@ -393,15 +390,14 @@ export const teamDepartments = [
   "Publication",
 ];
 
-// Placeholder team — replace names, photos and links with real IJA members.
+// CEO keeps the supplied portrait; other members use a generic avatar.
 export const team = [
   {
     name: "Md. Nashit Kaosar Tanvir ",
     role: "CEO",
-    dept: "Leadership",
+    dept: "CEO",
     image: ceo,
-    expertise:
-      "Public health epidemiologist leading IJA's research strategy and partnerships.",
+    expertise: "International Journal Alliance.",
     focus: ["Epidemiology", "Health Policy", "Research Strategy"],
 
     quote:
@@ -415,81 +411,41 @@ export const team = [
   {
     name: "Dr. Sharmin Akter",
     role: "Head of Public Health Research",
-    dept: "Leadership",
-    image: portrait("1559839734-2b71ea197ec2"),
+    dept: "Research",
+    image: "/images/user-avatar.svg",
     expertise:
       "Maternal and community health researcher with 12+ years of field experience.",
     focus: ["Maternal Health", "Community Trials"],
     links: { linkedin: "#", scholar: "#", email: "mailto:IJA.org@gmail.com" },
   },
   {
-    name: "Prof. David Mitchell",
+    name: "Fahim Rahman",
+    role: "Head of Public Health Research",
+    dept: "Leadership",
+    image: "/images/user-avatar.svg",
+    expertise:
+      "Maternal and community health researcher with 12+ years of field experience.",
+    focus: ["Maternal Health", "Community Trials"],
+    links: { linkedin: "#", scholar: "#", email: "mailto:IJA.org@gmail.com" },
+  },
+  {
+    name: "Sabrina Sultana",
     role: "Senior Biostatistician",
     dept: "Data & Analytics",
-    image: portrait("1472099645785-5658abf4ff4e"),
+    image: "/images/user-avatar.svg",
     expertise:
       "Designs robust statistical models for clinical and population-level studies.",
     focus: ["Biostatistics", "R / Stata", "Meta-analysis"],
     links: { linkedin: "#", scholar: "#", email: "mailto:IJA.org@gmail.com" },
   },
   {
-    name: "Dr. Elena Varga",
+    name: "Mahmud Hasan",
     role: "Director of Publications",
     dept: "Publication",
-    image: portrait("1544005313-94ddf0286df2"),
+    image: "/images/user-avatar.svg",
     expertise:
       "Former journal editor guiding manuscripts from draft to peer-reviewed acceptance.",
     focus: ["Scientific Writing", "Peer Review"],
-    links: { linkedin: "#", scholar: "#", email: "mailto:IJA.org@gmail.com" },
-  },
-  {
-    name: "Dr. Tanvir Ahmed",
-    role: "Environmental Health Scientist",
-    dept: "Research",
-    image: portrait("1500648767791-00dcc994a43e"),
-    expertise:
-      "Studies air quality, climate exposure and their impact on urban health.",
-    focus: ["Air Quality", "Climate & Health"],
-    links: { linkedin: "#", scholar: "#", email: "mailto:IJA.org@gmail.com" },
-  },
-  {
-    name: "Nadia Islam",
-    role: "Journal Management Lead",
-    dept: "Publication",
-    image: portrait("1551836022-d5d88e9218df"),
-    expertise:
-      "Runs editorial workflows, indexing strategy and journal operations.",
-    focus: ["Editorial Ops", "Indexing"],
-    links: { linkedin: "#", scholar: "#", email: "mailto:IJA.org@gmail.com" },
-  },
-  {
-    name: "Rafiq Hasan",
-    role: "Data Analyst",
-    dept: "Data & Analytics",
-    image: portrait("1557862921-37829c790f19"),
-    expertise:
-      "Turns complex datasets into clear visualizations and reproducible reports.",
-    focus: ["Python", "Visualization", "SPSS"],
-    links: { linkedin: "#", scholar: "#", email: "mailto:IJA.org@gmail.com" },
-  },
-  {
-    name: "Maria Lopez",
-    role: "Clinical Research Coordinator",
-    dept: "Research",
-    image: portrait("1594824476967-48c8b964273f"),
-    expertise:
-      "Coordinates protocols, ethics approvals and data collection across sites.",
-    focus: ["Clinical Trials", "Ethics & IRB"],
-    links: { linkedin: "#", scholar: "#", email: "mailto:IJA.org@gmail.com" },
-  },
-  {
-    name: "James Carter",
-    role: "Partnerships & Outreach Manager",
-    dept: "Leadership",
-    image: portrait("1519085360753-af0119f7cbe7"),
-    expertise:
-      "Builds collaborations with universities, NGOs and international agencies.",
-    focus: ["Partnerships", "Grants"],
     links: { linkedin: "#", scholar: "#", email: "mailto:IJA.org@gmail.com" },
   },
 ];
