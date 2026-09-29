@@ -4,6 +4,7 @@ import s03 from "@/app/assets/img/s03.jpg";
 import s04 from "@/app/assets/img/s04.jpg";
 import s05 from "@/app/assets/img/s05.jpg";
 import s06 from "@/app/assets/img/s06.jpg";
+import ceo from "@/app/assets/img/ceo.jpeg";
 
 const img = (id, w = 1200) =>
   `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=${w}&q=80`;
@@ -395,17 +396,21 @@ export const teamDepartments = [
 // Placeholder team — replace names, photos and links with real IJA members.
 export const team = [
   {
-    name: "Dr. Arif Rahman",
-    role: "Founder & Executive Director",
+    name: "Md. Nashit Kaosar Tanvir ",
+    role: "CEO",
     dept: "Leadership",
-    image: portrait("1612349317150-e413f6a5b16d"),
+    image: ceo,
     expertise:
       "Public health epidemiologist leading IJA's research strategy and partnerships.",
     focus: ["Epidemiology", "Health Policy", "Research Strategy"],
-    credentials: "MBBS, MPH, PhD in Epidemiology",
+
     quote:
       "Great research begins with a meaningful question and ends with real change in people's lives.",
-    links: { linkedin: "#", scholar: "#", email: "mailto:IJA.org@gmail.com" },
+    links: {
+      linkedin: "#",
+      scholar: "#",
+      email: "mailto:nashitkaosartanvir74@gmail.com",
+    },
   },
   {
     name: "Dr. Sharmin Akter",
