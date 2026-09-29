@@ -28,7 +28,7 @@ export default function Home() {
         <About />
         <Team />
         {/* <ResearchAreas /> */}
-        <Services />
+        <Services preview />
         <ResearchProcess />
         {/* <WhyChooseUs /> */}
         {/* <Achievements /> */}

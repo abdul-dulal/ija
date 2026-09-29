@@ -6,8 +6,9 @@ import { useGsap } from "@/lib/gsap";
 import { services } from "@/data/site";
 import { Icon, SectionHeading } from "./ui";
 import Image from "next/image";
+import Link from "next/link";
 
-export default function Services() {
+export default function Services({ preview = false }) {
   const ref = useRef(null);
   useGsap(ref);
 
@@ -19,8 +20,15 @@ export default function Services() {
   };
 
   return (
-    <section id="services" ref={ref} className="section-y relative isolate overflow-hidden bg-offwhite">
-      <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10">
+    <section
+      id="services"
+      ref={ref}
+      className="section-y relative isolate overflow-hidden bg-offwhite"
+    >
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 -z-10"
+      >
         <div className="bg-grid absolute inset-0 [mask-image:radial-gradient(ellipse_at_top,black_30%,transparent_75%)]" />
         <div className="absolute -top-40 right-[-10%] h-[36rem] w-[36rem] rounded-full bg-cyan/20 blur-[120px]" />
         <div className="absolute top-1/3 -left-40 h-[28rem] w-[28rem] rounded-full bg-royal/10 blur-[120px]" />
@@ -39,7 +47,7 @@ export default function Services() {
         />
 
         <div className="mt-16 grid gap-4 overflow-hidden   sm:grid-cols-2 lg:grid-cols-3">
-          {services.map((s) => (
+          {(preview ? services.slice(0, 3) : services).map((s) => (
             <article
               key={s.title}
               data-reveal="fade"
@@ -63,6 +71,14 @@ export default function Services() {
             </article>
           ))}
         </div>
+
+        {preview && (
+          <div className="mt-10 flex justify-center">
+            <Link href="/services" className="btn btn-primary">
+              View All Services <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
+        )}
       </div>
     </section>
   );

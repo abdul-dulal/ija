@@ -14,10 +14,11 @@ export const site = {
   tagline: "Global Research & Innovation Network",
   founded: 2020,
   address:
-    "20-21 Farmview Super Market, Level 05, Farmgate, Dhaka-1215, Bangladesh",
-  phone: "+880 1917-601590",
+    "54-56, Capital Super Market,104,Green Road, Farmgate, Dhaka 1215,Bangladesh.",
+  phone: "+8801740155603",
   phoneHref: "tel:+8801917601590",
-  email: "ija.org@gmail.com",
+  email: "journalalliance.org@gmail.com",
+  personalEmail: "nashitkaosartanvir74@gmail.com",
   hours: "Sat – Thu, 9:00 AM – 6:00 PM",
   mapQuery: "Farmview Super Market, Farmgate, Dhaka",
 };

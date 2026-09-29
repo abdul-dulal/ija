@@ -107,6 +107,15 @@ export default function Footer() {
                   {site.email}
                 </a>
               </li>
+              <li>
+                <a
+                  href={`mailto:${site.personalEmail}`}
+                  className="flex gap-3 transition-colors hover:text-cyan"
+                >
+                  <Mail className="mt-0.5 h-4 w-4 shrink-0 text-cyan" />{" "}
+                  {site.personalEmail}
+                </a>
+              </li>
             </ul>
           </div>
         </div>
