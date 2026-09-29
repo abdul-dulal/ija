@@ -36,7 +36,7 @@ export default function TeamHero() {
   });
 
   return (
-    <section ref={ref} className="relative overflow-hidden bg-offwhite pt-32 pb-20 sm:pt-40 lg:pb-28">
+    <section ref={ref} className="relative overflow-hidden bg-offwhite pt-10 pb-20 sm:pt-14 lg:pb-28">
       <div className="bg-grid pointer-events-none absolute inset-0 [mask-image:radial-gradient(ellipse_at_top_left,black_25%,transparent_70%)]" />
       <div className="absolute -top-40 right-0 h-[30rem] w-[30rem] rounded-full bg-cyan/20 blur-[120px]" />
 

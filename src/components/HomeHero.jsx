@@ -32,7 +32,7 @@ const HomeHero = () => {
   }, []);
 
   return (
-    <div className="mt-20">
+    <div>
       <div className="relative">
         <Image src={hero} alt="Hero" />
         <div className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2">

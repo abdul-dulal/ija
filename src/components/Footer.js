@@ -1,6 +1,8 @@
 import { ArrowRight, ArrowUp, Mail, MapPin, Phone } from "lucide-react";
 import { flatNavLinks, serviceLinks, site } from "@/data/site";
 import { Logo, SocialLinks } from "./ui";
+import logo from "@/app/assets/img/logo.jpeg";
+import Image from "next/image";
 
 const quickLinks = flatNavLinks.filter(
   (l) => !["Home", "Resources"].includes(l.label),
@@ -35,7 +37,7 @@ export default function Footer() {
 
         <div className="grid gap-12 py-16 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1.3fr]">
           <div>
-            <Logo light />
+            <Image src={logo} alt="Logo" className="h-50 w-50" />
             <p className="mt-6 max-w-xs text-sm leading-relaxed text-white/60">
               The {site.fullName} is an innovative research support centre
               advancing impactful health, environmental and social research

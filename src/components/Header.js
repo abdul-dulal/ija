@@ -10,7 +10,6 @@ import logo from "@/app/assets/img/logo.jpeg";
 import Image from "next/image";
 
 export default function Header() {
-  const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const [dropdown, setDropdown] = useState(null);
   const [mobileSub, setMobileSub] = useState(null);
@@ -26,13 +25,6 @@ export default function Header() {
   useEffect(() => setDropdown(null), [pathname]);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 24);
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
-  useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
     const onKey = (e) => e.key === "Escape" && setOpen(false);
     window.addEventListener("keydown", onKey);
@@ -44,16 +36,10 @@ export default function Header() {
 
   return (
     <>
-      <header
-        className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
-          scrolled
-            ? "border-b border-line/70 bg-white/80 py-3 shadow-[0_8px_30px_-18px_rgba(11,31,51,0.25)] backdrop-blur-xl"
-            : "border-b border-transparent bg-transparent py-5"
-        }`}
-      >
+      <header className="relative z-50 border-b border-line/70 bg-offwhite py-0">
         <div className="container-x flex items-center justify-between gap-6">
           <div>
-            <Image src={logo} alt="Logo" className="w-40 h-40" />
+            <Image src={logo} alt="Logo" className="h-50 w-50 object-contain" />
           </div>
 
           <nav aria-label="Primary" className="hidden xl:block">

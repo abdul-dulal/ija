@@ -35,7 +35,7 @@ export default function About() {
     <section
       id="about"
       ref={ref}
-      className=" py-25 relative overflow-hidden bg-white"
+      className=" py-16 relative overflow-hidden bg-white"
     >
       <div className="container-x grid items-center gap-16 lg:grid-cols-2 lg:gap-20">
         {/* Imagery */}

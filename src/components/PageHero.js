@@ -32,7 +32,7 @@ export default function PageHero({ eyebrow, title, highlight, text, image, badge
   });
 
   return (
-    <section ref={ref} className="relative isolate overflow-hidden bg-offwhite pt-32 pb-16 sm:pt-40 lg:pb-24">
+    <section ref={ref} className="relative isolate overflow-hidden bg-offwhite pt-10 pb-16 sm:pt-14 lg:pb-24">
       <div className="bg-grid pointer-events-none absolute inset-0 -z-10 [mask-image:radial-gradient(ellipse_at_top_left,black_25%,transparent_70%)]" />
       <div className="absolute -top-40 right-[-10%] -z-10 h-[32rem] w-[32rem] rounded-full bg-cyan/20 blur-[120px]" />
       <div className="absolute bottom-0 left-[-10%] -z-10 h-72 w-72 rounded-full bg-royal/10 blur-[100px]" />
