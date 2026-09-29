@@ -12,7 +12,7 @@ export const metadata = {
 export default function PublicationsPage() {
   return (
     <PageShell>
-      <section className="container-x mx-auto max-w-[1140px] py-10 sm:py-14">
+      <section className="container-x mx-auto max-w-290 py-25 ">
         <h1 className="sr-only">Category: Publication</h1>
         <div className="space-y-10 sm:space-y-12">
           {publications.map((article) => {
@@ -21,7 +21,10 @@ export default function PublicationsPage() {
             return (
               <article key={article.slug} className="publication-archive-entry">
                 <h2 className="mb-5 text-2xl font-semibold leading-snug text-ink sm:text-[1.75rem]">
-                  <Link href={href} className="transition-colors hover:text-teal">
+                  <Link
+                    href={href}
+                    className="transition-colors hover:text-teal"
+                  >
                     {article.title}
                   </Link>
                 </h2>

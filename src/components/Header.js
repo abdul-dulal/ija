@@ -6,6 +6,8 @@ import { usePathname } from "next/navigation";
 import { ArrowRight, ChevronDown, Menu, X, Mail, Phone } from "lucide-react";
 import { flatNavLinks, navLinks, site } from "@/data/site";
 import { Logo, SocialLinks } from "./ui";
+import logo from "@/app/assets/img/logo.jpeg";
+import Image from "next/image";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -15,9 +17,10 @@ export default function Header() {
   const pathname = usePathname();
   // Highlight the nav item for the current page (and its sub-pages)
   const active =
-    flatNavLinks.find((l) => l.href !== "/" && pathname.startsWith(l.href))?.href ??
-    (pathname === "/" ? "/" : null);
-  const isActive = (l) => (l.children ? l.children.some((c) => c.href === active) : l.href === active);
+    flatNavLinks.find((l) => l.href !== "/" && pathname.startsWith(l.href))
+      ?.href ?? (pathname === "/" ? "/" : null);
+  const isActive = (l) =>
+    l.children ? l.children.some((c) => c.href === active) : l.href === active;
 
   // Close the desktop dropdown whenever the route changes
   useEffect(() => setDropdown(null), [pathname]);
@@ -49,7 +52,9 @@ export default function Header() {
         }`}
       >
         <div className="container-x flex items-center justify-between gap-6">
-          <Logo />
+          <div>
+            <Image src={logo} alt="Logo" className="w-40 h-40" />
+          </div>
 
           <nav aria-label="Primary" className="hidden xl:block">
             <ul className="flex items-center gap-1">
@@ -63,7 +68,9 @@ export default function Header() {
                   >
                     <button
                       type="button"
-                      onClick={() => setDropdown(dropdown === l.label ? null : l.label)}
+                      onClick={() =>
+                        setDropdown(dropdown === l.label ? null : l.label)
+                      }
                       aria-expanded={dropdown === l.label}
                       aria-haspopup="true"
                       className={`relative flex items-center gap-1 rounded-full px-3.5 py-2 text-sm font-medium transition-colors duration-300 ${
@@ -93,7 +100,9 @@ export default function Header() {
                             <Link
                               href={c.href}
                               className={`flex items-center justify-between rounded-xl px-4 py-2.5 text-sm font-medium transition-colors duration-300 ${
-                                active === c.href ? "bg-teal/10 text-navy" : "text-slate hover:bg-teal/5 hover:text-navy"
+                                active === c.href
+                                  ? "bg-teal/10 text-navy"
+                                  : "text-slate hover:bg-teal/5 hover:text-navy"
                               }`}
                             >
                               {c.label}
@@ -126,7 +135,10 @@ export default function Header() {
           </nav>
 
           <div className="flex items-center gap-3">
-            <Link href="/contact" className="btn btn-dark hidden !py-3 sm:inline-flex">
+            <Link
+              href="/contact"
+              className="btn btn-dark hidden !py-3 sm:inline-flex"
+            >
               Get Started <ArrowRight className="h-4 w-4" />
             </Link>
             <button
@@ -176,14 +188,18 @@ export default function Header() {
               {navLinks.map((l, i) => (
                 <li
                   key={l.href ?? l.label}
-                  style={{ transitionDelay: open ? `${120 + i * 45}ms` : "0ms" }}
+                  style={{
+                    transitionDelay: open ? `${120 + i * 45}ms` : "0ms",
+                  }}
                   className={`transition-all duration-500 ${open ? "translate-x-0 opacity-100" : "translate-x-6 opacity-0"}`}
                 >
                   {l.children ? (
                     <>
                       <button
                         type="button"
-                        onClick={() => setMobileSub(mobileSub === l.label ? null : l.label)}
+                        onClick={() =>
+                          setMobileSub(mobileSub === l.label ? null : l.label)
+                        }
                         tabIndex={open ? 0 : -1}
                         aria-expanded={mobileSub === l.label}
                         className={`flex w-full items-center justify-between border-b border-white/10 py-4 text-left font-display text-2xl font-semibold ${
@@ -197,7 +213,9 @@ export default function Header() {
                       </button>
                       <div
                         className={`grid transition-all duration-500 ${
-                          mobileSub === l.label ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
+                          mobileSub === l.label
+                            ? "grid-rows-[1fr] opacity-100"
+                            : "grid-rows-[0fr] opacity-0"
                         }`}
                       >
                         <ul className="overflow-hidden pl-4">
@@ -206,9 +224,13 @@ export default function Header() {
                               <Link
                                 href={c.href}
                                 onClick={() => setOpen(false)}
-                                tabIndex={open && mobileSub === l.label ? 0 : -1}
+                                tabIndex={
+                                  open && mobileSub === l.label ? 0 : -1
+                                }
                                 className={`flex items-center justify-between border-b border-white/5 py-3 text-lg font-medium ${
-                                  active === c.href ? "text-cyan" : "text-white/80"
+                                  active === c.href
+                                    ? "text-cyan"
+                                    : "text-white/80"
                                 }`}
                               >
                                 {c.label}
@@ -238,10 +260,18 @@ export default function Header() {
           </nav>
 
           <div className="mt-auto space-y-3 pt-10 text-sm text-white/70">
-            <a href={`mailto:${site.email}`} className="flex items-center gap-3" tabIndex={open ? 0 : -1}>
+            <a
+              href={`mailto:${site.email}`}
+              className="flex items-center gap-3"
+              tabIndex={open ? 0 : -1}
+            >
               <Mail className="h-4 w-4 text-cyan" /> {site.email}
             </a>
-            <a href={site.phoneHref} className="flex items-center gap-3" tabIndex={open ? 0 : -1}>
+            <a
+              href={site.phoneHref}
+              className="flex items-center gap-3"
+              tabIndex={open ? 0 : -1}
+            >
               <Phone className="h-4 w-4 text-cyan" /> {site.phone}
             </a>
             <Link

@@ -29,7 +29,7 @@ export default async function PublicationDetailPage({ params }) {
 
   return (
     <PageShell>
-      <article className="container-x mx-auto max-w-[1000px] py-10 sm:py-14">
+      <article className="container-x mx-auto max-w-290 py-25">
         <Link href="/publications" className="link-arrow mb-8">
           <ArrowLeft className="h-4 w-4" /> Back to Publications
         </Link>
@@ -57,7 +57,7 @@ export default async function PublicationDetailPage({ params }) {
               {publication.abstract}
             </div>
 
-            {publication.downloadUrl && (
+            {/* {publication.downloadUrl && (
               <a
                 href={publication.downloadUrl}
                 target="_blank"
@@ -66,7 +66,7 @@ export default async function PublicationDetailPage({ params }) {
               >
                 Download Full Article <Download className="h-4 w-4" />
               </a>
-            )}
+            )} */}
           </div>
         </div>
       </article>
