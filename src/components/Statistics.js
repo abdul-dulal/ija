@@ -2,14 +2,15 @@
 
 import { useRef } from "react";
 import { FlaskConical, FileText, Handshake, Award } from "lucide-react";
-import { useGsap, animateCounters } from "@/lib/gsap";
+import CountUp from "react-countup";
+import { useGsap } from "@/lib/gsap";
 import { stats } from "@/data/site";
 
 const statIcons = [FlaskConical, FileText, Handshake, Award];
 
 export default function Statistics() {
   const ref = useRef(null);
-  useGsap(ref, animateCounters);
+  useGsap(ref);
 
   return (
     <section
@@ -40,7 +41,13 @@ export default function Statistics() {
                   <StatIcon className="h-5 w-5" />
                 </span>
                 <p className="mt-6 font-display text-4xl font-extrabold tracking-tight text-navy sm:text-5xl">
-                  <span data-count={s.value}>{s.value}</span>
+                  <CountUp
+                    end={s.value}
+                    duration={2.5}
+                    separator=","
+                    enableScrollSpy
+                    scrollSpyOnce
+                  />
                   <span className="text-teal">{s.suffix}</span>
                 </p>
                 <p className="mt-2 font-semibold text-ink">{s.label}</p>
