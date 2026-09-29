@@ -1,6 +1,9 @@
 import s01 from "@/app/assets/img/s01.jpg";
 import s02 from "@/app/assets/img/s02.jpg";
 import s03 from "@/app/assets/img/s03.jpg";
+import s04 from "@/app/assets/img/s04.jpg";
+import s05 from "@/app/assets/img/s05.jpg";
+import s06 from "@/app/assets/img/s06.jpg";
 
 const img = (id, w = 1200) =>
   `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=${w}&q=80`;
@@ -112,37 +115,33 @@ export const services = [
     icon: s01,
     title: "Protocol Development",
     text: "Study design, sampling strategy, ethics documentation and a clear research plan.",
-    tags: ["Study design", "Ethics"],
   },
   {
     icon: s02,
-    title: "Article Writing",
+    title: "Publication Support",
     text: "Manuscript preparation aligned with journal guidelines and academic standards.",
     tags: ["Manuscripts", "Editing"],
   },
   {
     icon: s03,
-    title: "Article Research",
+    title: "Journal Management and Development",
     text: "Systematic literature review, methodology selection and evidence synthesis.",
     tags: ["Literature review", "Meta-analysis"],
   },
   {
-    icon: s01,
-    title: "Data Analysis",
+    icon: s04,
+    title: "Data Analysis and Reporting",
     text: "Statistical analysis, interpretation, visualization and publication-ready reporting.",
-    tags: ["SPSS / R / Stata", "Visualization"],
   },
   {
-    icon: s02,
+    icon: s05,
     title: "Publication Support",
     text: "Journal selection, submission, reviewer responses and end-to-end guidance.",
-    tags: ["Submission", "Peer review"],
   },
   {
-    icon: s03,
+    icon: s06,
     title: "Journal Management",
     text: "Journal development, editorial workflows, indexing strategy and operations.",
-    tags: ["Editorial", "Indexing"],
   },
 ];
 

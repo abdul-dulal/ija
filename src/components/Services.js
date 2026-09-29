@@ -19,7 +19,12 @@ export default function Services() {
   };
 
   return (
-    <section id="services" ref={ref} className="section-y relative bg-white">
+    <section id="services" ref={ref} className="section-y relative isolate overflow-hidden bg-offwhite">
+      <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10">
+        <div className="bg-grid absolute inset-0 [mask-image:radial-gradient(ellipse_at_top,black_30%,transparent_75%)]" />
+        <div className="absolute -top-40 right-[-10%] h-[36rem] w-[36rem] rounded-full bg-cyan/20 blur-[120px]" />
+        <div className="absolute top-1/3 -left-40 h-[28rem] w-[28rem] rounded-full bg-royal/10 blur-[120px]" />
+      </div>
       <div className="container-x">
         <SectionHeading
           align="center"
