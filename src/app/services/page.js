@@ -9,9 +9,9 @@ import CTA from "@/components/CTA";
 import { pageImages, serviceFaqs } from "@/data/pages";
 
 export const metadata = {
-  title: "Research Services — IOJN",
+  title: "Research Services — IJA",
   description:
-    "Protocol development, article writing, data analysis, publication support and journal management by IOJN's research experts.",
+    "Protocol development, article writing, data analysis, publication support and journal management by IJA's research experts.",
 };
 
 export default function ServicesPage() {

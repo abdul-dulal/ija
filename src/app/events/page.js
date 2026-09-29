@@ -7,9 +7,9 @@ import CTA from "@/components/CTA";
 import { pageImages } from "@/data/pages";
 
 export const metadata = {
-  title: "Events & Conferences — IOJN",
+  title: "Events & Conferences — IJA",
   description:
-    "Upcoming conferences, workshops and seminars from IOJN, plus highlights from past events.",
+    "Upcoming conferences, workshops and seminars from IJA, plus highlights from past events.",
 };
 
 export default function EventsPage() {
@@ -19,7 +19,7 @@ export default function EventsPage() {
         eyebrow="Events"
         title="Conferences, Workshops"
         highlight="& Knowledge Exchange"
-        text="Learn, present and connect with researchers, practitioners and policymakers at IOJN's events — in person and online."
+        text="Learn, present and connect with researchers, practitioners and policymakers at IJA's events — in person and online."
         image={pageImages.events}
         badge={{ value: "1,200+", label: "Participants in 2026" }}
         anchors={[

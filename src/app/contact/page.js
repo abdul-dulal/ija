@@ -6,9 +6,9 @@ import FAQ from "@/components/FAQ";
 import { contactFaqs, pageImages } from "@/data/pages";
 
 export const metadata = {
-  title: "Contact IOJN",
+  title: "Contact IJA",
   description:
-    "Get in touch with IOJN in Farmgate, Dhaka to discuss your research project, services or partnerships.",
+    "Get in touch with IJA in Farmgate, Dhaka to discuss your research project, services or partnerships.",
 };
 
 export default function ContactPage() {

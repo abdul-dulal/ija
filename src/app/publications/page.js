@@ -7,9 +7,9 @@ import SubmissionGuide from "@/components/publications/SubmissionGuide";
 import { pageImages } from "@/data/pages";
 
 export const metadata = {
-  title: "Publications — IOJN",
+  title: "Publications — IJA",
   description:
-    "Browse IOJN's research publications, the journals we manage and how to submit your manuscript.",
+    "Browse IJA's research publications, the journals we manage and how to submit your manuscript.",
 };
 
 export default function PublicationsPage() {

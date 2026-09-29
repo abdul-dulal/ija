@@ -23,7 +23,7 @@ export default function AboutPage() {
         eyebrow="About Us"
         title="Research With Purpose,"
         highlight="Impact With Integrity"
-        text="Since 2020, IOJN has helped researchers and institutions design, conduct and publish research that improves health, protects the environment and strengthens communities."
+        text="Since 2020, IJA has helped researchers and institutions design, conduct and publish research that improves health, protects the environment and strengthens communities."
         image={pageImages.about}
         badge={{ value: "2020", label: "Established in Dhaka" }}
         anchors={[

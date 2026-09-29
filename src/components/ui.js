@@ -103,11 +103,7 @@ export function SectionHeading({
 
 export function Logo({ light = false, compact = false }) {
   return (
-    <a
-      href="/"
-      className="group flex items-center gap-3"
-      aria-label="IOJN home"
-    >
+    <a href="/" className="group flex items-center gap-3" aria-label="IJA home">
       <span className="relative grid h-10 w-10 shrink-0 place-items-center overflow-hidden rounded-xl bg-brand-gradient shadow-glow transition-transform duration-500 group-hover:rotate-[8deg]">
         <svg
           viewBox="0 0 32 32"

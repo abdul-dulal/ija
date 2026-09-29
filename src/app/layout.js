@@ -16,7 +16,7 @@ const manrope = Manrope({
 export const metadata = {
   title: "International journal Alliance",
   description:
-    "IOJN supports researchers, academics, institutions and organizations through protocol development, data analysis, article writing, publication support and journal management.",
+    "IJA supports researchers, academics, institutions and organizations through protocol development, data analysis, article writing, publication support and journal management.",
 };
 
 export const viewport = {

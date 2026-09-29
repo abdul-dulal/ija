@@ -7,8 +7,9 @@ import CTA from "@/components/CTA";
 import { pageImages, resourceFaqs } from "@/data/pages";
 
 export const metadata = {
-  title: "Resources — IOJN",
-  description: "Free research guides, templates, webinars and datasets from IOJN, plus the tools our analysts use.",
+  title: "Resources — IJA",
+  description:
+    "Free research guides, templates, webinars and datasets from IJA, plus the tools our analysts use.",
 };
 
 export default function ResourcesPage() {
@@ -18,7 +19,7 @@ export default function ResourcesPage() {
         eyebrow="Resources"
         title="Guides, Tools &"
         highlight="Learning Materials"
-        text="Free, practical resources to help you plan, analyse and publish better research — created by the IOJN team."
+        text="Free, practical resources to help you plan, analyse and publish better research — created by the IJA team."
         image={pageImages.resources}
         badge={{ value: "Free", label: "For academic use" }}
         anchors={[
@@ -29,7 +30,10 @@ export default function ResourcesPage() {
       />
       <ResourceLibrary />
       <ResearchTools />
-      <FAQ items={resourceFaqs} text="Everything you need to know about using our resources." />
+      <FAQ
+        items={resourceFaqs}
+        text="Everything you need to know about using our resources."
+      />
       <CTA />
     </PageShell>
   );

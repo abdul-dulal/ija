@@ -5,9 +5,9 @@ import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "Our Team — IOJN | People Behind the Research",
+  title: "Our Team — IJA | People Behind the Research",
   description:
-    "Meet IOJN's researchers, biostatisticians, editors and coordinators advancing public health, environmental health and academic research.",
+    "Meet IJA's researchers, biostatisticians, editors and coordinators advancing public health, environmental health and academic research.",
 };
 
 export default function TeamPage() {

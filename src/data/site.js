@@ -10,7 +10,7 @@ const img = (id, w = 1200) =>
 
 export const site = {
   name: "IJA",
-  fullName: "International Online Journal Network",
+  fullName: "International Journal Alliance",
   tagline: "Global Research & Innovation Network",
   founded: 2020,
   address:
@@ -306,7 +306,7 @@ export const testimonials = [
     role: "Assistant Professor, Public Health",
     org: "State University",
     quote:
-      "IOJN's protocol and data analysis support transformed my study. Their team was rigorous, responsive and genuinely invested in the quality of the research.",
+      "IJA's protocol and data analysis support transformed my study. Their team was rigorous, responsive and genuinely invested in the quality of the research.",
   },
   {
     image: img("1560250097-0b93528c311a", 200),
@@ -392,7 +392,7 @@ export const teamDepartments = [
   "Publication",
 ];
 
-// Placeholder team — replace names, photos and links with real IOJN members.
+// Placeholder team — replace names, photos and links with real IJA members.
 export const team = [
   {
     name: "Dr. Arif Rahman",
@@ -400,12 +400,12 @@ export const team = [
     dept: "Leadership",
     image: portrait("1612349317150-e413f6a5b16d"),
     expertise:
-      "Public health epidemiologist leading IOJN's research strategy and partnerships.",
+      "Public health epidemiologist leading IJA's research strategy and partnerships.",
     focus: ["Epidemiology", "Health Policy", "Research Strategy"],
     credentials: "MBBS, MPH, PhD in Epidemiology",
     quote:
       "Great research begins with a meaningful question and ends with real change in people's lives.",
-    links: { linkedin: "#", scholar: "#", email: "mailto:iojn.org@gmail.com" },
+    links: { linkedin: "#", scholar: "#", email: "mailto:IJA.org@gmail.com" },
   },
   {
     name: "Dr. Sharmin Akter",
@@ -415,7 +415,7 @@ export const team = [
     expertise:
       "Maternal and community health researcher with 12+ years of field experience.",
     focus: ["Maternal Health", "Community Trials"],
-    links: { linkedin: "#", scholar: "#", email: "mailto:iojn.org@gmail.com" },
+    links: { linkedin: "#", scholar: "#", email: "mailto:IJA.org@gmail.com" },
   },
   {
     name: "Prof. David Mitchell",
@@ -425,7 +425,7 @@ export const team = [
     expertise:
       "Designs robust statistical models for clinical and population-level studies.",
     focus: ["Biostatistics", "R / Stata", "Meta-analysis"],
-    links: { linkedin: "#", scholar: "#", email: "mailto:iojn.org@gmail.com" },
+    links: { linkedin: "#", scholar: "#", email: "mailto:IJA.org@gmail.com" },
   },
   {
     name: "Dr. Elena Varga",
@@ -435,7 +435,7 @@ export const team = [
     expertise:
       "Former journal editor guiding manuscripts from draft to peer-reviewed acceptance.",
     focus: ["Scientific Writing", "Peer Review"],
-    links: { linkedin: "#", scholar: "#", email: "mailto:iojn.org@gmail.com" },
+    links: { linkedin: "#", scholar: "#", email: "mailto:IJA.org@gmail.com" },
   },
   {
     name: "Dr. Tanvir Ahmed",
@@ -445,7 +445,7 @@ export const team = [
     expertise:
       "Studies air quality, climate exposure and their impact on urban health.",
     focus: ["Air Quality", "Climate & Health"],
-    links: { linkedin: "#", scholar: "#", email: "mailto:iojn.org@gmail.com" },
+    links: { linkedin: "#", scholar: "#", email: "mailto:IJA.org@gmail.com" },
   },
   {
     name: "Nadia Islam",
@@ -455,7 +455,7 @@ export const team = [
     expertise:
       "Runs editorial workflows, indexing strategy and journal operations.",
     focus: ["Editorial Ops", "Indexing"],
-    links: { linkedin: "#", scholar: "#", email: "mailto:iojn.org@gmail.com" },
+    links: { linkedin: "#", scholar: "#", email: "mailto:IJA.org@gmail.com" },
   },
   {
     name: "Rafiq Hasan",
@@ -465,7 +465,7 @@ export const team = [
     expertise:
       "Turns complex datasets into clear visualizations and reproducible reports.",
     focus: ["Python", "Visualization", "SPSS"],
-    links: { linkedin: "#", scholar: "#", email: "mailto:iojn.org@gmail.com" },
+    links: { linkedin: "#", scholar: "#", email: "mailto:IJA.org@gmail.com" },
   },
   {
     name: "Maria Lopez",
@@ -475,7 +475,7 @@ export const team = [
     expertise:
       "Coordinates protocols, ethics approvals and data collection across sites.",
     focus: ["Clinical Trials", "Ethics & IRB"],
-    links: { linkedin: "#", scholar: "#", email: "mailto:iojn.org@gmail.com" },
+    links: { linkedin: "#", scholar: "#", email: "mailto:IJA.org@gmail.com" },
   },
   {
     name: "James Carter",
@@ -485,6 +485,6 @@ export const team = [
     expertise:
       "Builds collaborations with universities, NGOs and international agencies.",
     focus: ["Partnerships", "Grants"],
-    links: { linkedin: "#", scholar: "#", email: "mailto:iojn.org@gmail.com" },
+    links: { linkedin: "#", scholar: "#", email: "mailto:IJA.org@gmail.com" },
   },
 ];

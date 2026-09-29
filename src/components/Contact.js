@@ -128,7 +128,7 @@ export default function Contact() {
         {/* Map */}
         <div data-reveal="up" className="overflow-hidden rounded-[2rem] border border-line bg-white p-2 shadow-soft lg:col-span-2">
           <iframe
-            title="IOJN office location"
+            title="JA office location"
             src={`https://www.google.com/maps?q=${encodeURIComponent(site.mapQuery)}&output=embed`}
             className="h-80 w-full rounded-[1.6rem] grayscale-[0.4] sm:h-96"
             loading="lazy"
