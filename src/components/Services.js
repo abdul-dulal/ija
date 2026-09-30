@@ -23,7 +23,7 @@ export default function Services({ preview = false }) {
     <section
       id="services"
       ref={ref}
-      className="section-y relative isolate overflow-hidden bg-offwhite"
+      className="py-20 relative isolate overflow-hidden bg-offwhite"
     >
       <div
         aria-hidden="true"

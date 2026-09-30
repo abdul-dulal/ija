@@ -2,6 +2,7 @@ import PageShell from "@/components/PageShell";
 import PageHero from "@/components/PageHero";
 import Services from "@/components/Services";
 import ServiceDetails from "@/components/services/ServiceDetails";
+import ServiceableArea from "@/components/ServiceableArea";
 import ResearchProcess from "@/components/ResearchProcess";
 import EngagementModels from "@/components/services/EngagementModels";
 import FAQ from "@/components/FAQ";
@@ -32,6 +33,7 @@ export default function ServicesPage() {
         ]}
       /> */}
       <Services />
+      <ServiceableArea />
       <ServiceDetails />
       {/* <ResearchProcess /> */}
       {/* <EngagementModels /> */}
