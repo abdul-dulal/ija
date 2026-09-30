@@ -7,12 +7,12 @@ import { gsap, useGsap } from "@/lib/gsap";
 import { images, site } from "@/data/site";
 
 const pillars = [
-  "Research support",
-  "Academic development",
-  "Public health",
-  "Environmental health",
-  "Human capacity development",
-  "Global collaboration",
+  "Experienced writers and editors with specialized knowledge.",
+  "Guaranteed publication in BMDC approved and peer reviewed journals.",
+  "Tailored support to meet your specific needs and deadlines.",
+  "Commitment to quality, accuracy, and ethical writing standards.",
+  "Writing without any data, based on your topic.",
+  "We publish in Index, Index Medicus, Index Copernicus, PubMed and Scopus journals.",
 ];
 
 export default function About() {
@@ -85,7 +85,7 @@ export default function About() {
         {/* Copy */}
         <div>
           <span data-reveal="up" className="eyebrow">
-            Who We Are
+            Why Choose Us?
           </span>
           <h2 data-reveal="up" className="heading-lg mt-4">
             International Journal Alliance (IJA)
@@ -121,7 +121,7 @@ export default function About() {
             ))}
           </ul>
 
-          <figure
+          {/* <figure
             data-reveal="up"
             className="mt-10 flex gap-4 rounded-2xl border-l-2 border-teal bg-offwhite p-5"
           >
@@ -130,7 +130,7 @@ export default function About() {
               “Our mission is to make rigorous research accessible to every
               scholar and institution striving to create positive change.”
             </blockquote>
-          </figure>
+          </figure> */}
 
           <div data-reveal="up" className="mt-10">
             <a href="/about" className="btn btn-dark">

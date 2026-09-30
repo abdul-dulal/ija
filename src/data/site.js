@@ -115,36 +115,34 @@ export const researchAreas = [
 export const services = [
   {
     icon: s01,
-    title: "Protocol Development",
-    text: "Study design, sampling strategy, ethics documentation and a clear research plan.",
+    title: "Research Articles",
+    text: "Detailed and Original Studies Based on Empirical Research.",
   },
   {
     icon: s02,
-    title: "Publication Support",
-    text: "Manuscript preparation aligned with journal guidelines and academic standards.",
-    tags: ["Manuscripts", "Editing"],
+    title: "Review Articles",
+    text: "Comprehensive Analyses of Current Research on Specific Topics.",
   },
   {
     icon: s03,
-    title: "Journal Management and Development",
-    text: "Systematic literature review, methodology selection and evidence synthesis.",
-    tags: ["Literature review", "Meta-analysis"],
+    title: "Case Reports",
+    text: "In-Depth Documentation of Unique Clinical Cases.",
   },
   {
     icon: s04,
-    title: "Data Analysis and Reporting",
-    text: "Statistical analysis, interpretation, visualization and publication-ready reporting.",
+    title: "Thesis Writing",
+    text: "Thorough Support for Your Dissertation or Thesis Projects.",
   },
   {
     icon: s05,
     title: "Publication Support",
     text: "Journal selection, submission, reviewer responses and end-to-end guidance.",
   },
-  {
-    icon: s06,
-    title: "Journal Management",
-    text: "Journal development, editorial workflows, indexing strategy and operations.",
-  },
+  // {
+  //   icon: s06,
+  //   title: "Journal Management",
+  //   text: "Journal development, editorial workflows, indexing strategy and operations.",
+  // },
 ];
 
 export const processSteps = [

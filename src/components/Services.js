@@ -43,7 +43,7 @@ export default function Services({ preview = false }) {
               <span className="text-gradient">Superior Research Services</span>
             </>
           }
-          text="Comprehensive, expert-led services that meet you wherever you are in the research lifecycle."
+          text="In addition to our writing services, we offer publication assistance in BMDC approved, Peer Reviewed journals, ensuring your work reaches a wide and reputable audience."
         />
 
         <div className="mt-16 grid gap-4 overflow-hidden   sm:grid-cols-2 lg:grid-cols-3">
