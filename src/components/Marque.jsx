@@ -22,7 +22,7 @@ const rows = [
 
 function JournalCard({ src, index }) {
   return (
-    <div className="group/card grid  shrink-0 place-items-center rounded-3xl border border-line bg-white px-6 py-4 shadow-soft transition-all duration-500 hover:-translate-y-1 hover:border-teal/30 hover:shadow-lift h-50 w-60">
+    <div className="group/card grid  shrink-0 place-items-center rounded-3xl border border-line bg-white px-6 py-4 shadow-soft transition-all duration-500 hover:-translate-y-1 hover:border-teal/30 hover:shadow-lift sm:h-50 sm:w-60 w-38 h-30 ">
       <Image
         src={src}
         alt={`Partner journal ${index + 1}`}

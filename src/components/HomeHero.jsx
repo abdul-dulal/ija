@@ -36,7 +36,7 @@ const HomeHero = () => {
     <div>
       <div className="relative">
         <div
-          className="sm:h-[800px] h-[500px] flex items-center bg-cover bg-center bg-no-repeat"
+          className="relative sm:h-[800px] h-[500px] flex items-center bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage: `url(${hero.src})`,
             backgroundPosition: "center",
@@ -44,25 +44,26 @@ const HomeHero = () => {
             backgroundRepeat: "no-repeat",
           }}
         >
-          <div className="px-3 container-x mx-auto">
+          <div className="absolute inset-0 bg-white/40" aria-hidden="true" />
+          <div className="relative z-10 px-3 container-x mx-auto">
             <h2
               ref={headingRef}
-              className="2xl:text-[100px] lg:text-[85px] sm:text-[50px] text-[35px]  font-semibold text-center text-black"
+              className="2xl:text-[100px] lg:text-[83px] sm:text-[50px] text-[35px]  font-bold text-center text-gradient"
             >
-              International journal Alliance (IJA)
+              <span className="">International</span> journal Alliance (IJA)
             </h2>
             <p
               ref={paragraphRef}
-              className="text-base text-black text-center mt-3"
+              className="text-3xl text-black font-medium text-center mt-3"
             >
-              Are you looking to publish your research in high-quality,
-              BMDC-approved journals
-              {/* We offer comprehensive manuscript
-              publication and writing services tailored to meet your academic
-              and professional needs. Our expert team specializes in crafting
-              well-researched and meticulously written manuscripts, including:
-              Research Articles, Review Articles, Case Reports, Backdated
-              Publications. */}
+              Global Network for Scholary Publications
+            </p>
+            <p
+              ref={paragraphRef}
+              className="text-xl text-black text-center mt-3"
+            >
+              ( Are you looking to publish your research in high-quality,
+              BMDC-approved journals)
             </p>
           </div>
         </div>

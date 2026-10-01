@@ -171,7 +171,7 @@ export function SocialLinks({ className = "" }) {
           key={name}
           href="#"
           aria-label={name}
-          className="grid h-10 w-10 place-items-center rounded-full border border-white/10 bg-white/5 text-white/70 transition-all duration-300 hover:-translate-y-0.5 hover:border-cyan/50 hover:bg-cyan/10 hover:text-cyan"
+          className="grid h-10 w-10 place-items-center rounded-full border border-white/10 bg-black text-white transition-all duration-300 hover:-translate-y-0.5 h"
         >
           <svg
             viewBox="0 0 24 24"
