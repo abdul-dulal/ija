@@ -26,7 +26,7 @@ export default function Statistics() {
         </div>
         <div
           data-reveal="up"
-          className="grid grid-cols-2 overflow-hidden  lg:grid-cols-4 gap-3 "
+          className="grid sm:grid-cols-2  overflow-hidden  lg:grid-cols-4 gap-3 "
         >
           {stats.map((s, i) => {
             const StatIcon = statIcons[i];
@@ -37,7 +37,7 @@ export default function Statistics() {
                   i % 2 === 0 ? "border-r border-line" : ""
                 } ${i < 2 ? "border-b border-line lg:border-b-0" : ""} ${i === 1 ? "lg:border-r" : ""}`}
               >
-                <span className="grid h-11 w-11 place-items-center rounded-2xl bg-mist text-royal transition-all duration-500 group-hover:bg-teal group-hover:text-white">
+                <span className="grid   h-11 w-11 place-items-center rounded-2xl bg-mist text-royal transition-all duration-500 group-hover:bg-teal group-hover:text-white">
                   <StatIcon className="h-5 w-5" />
                 </span>
                 <p className="mt-6 font-display text-4xl font-extrabold tracking-tight text-navy sm:text-5xl">

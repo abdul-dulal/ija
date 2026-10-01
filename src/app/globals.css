@@ -24,6 +24,7 @@
   --shadow-glow: 0 18px 40px -16px rgb(15 139 141 / 0.55);
 
   --animate-marquee: marquee 40s linear infinite;
+  --animate-marquee-reverse: marquee-reverse 40s linear infinite;
   --animate-pulse-ring: pulse-ring 2.4s cubic-bezier(0.2, 0.6, 0.4, 1) infinite;
   --animate-float: float 7s ease-in-out infinite;
 
@@ -33,6 +34,14 @@
     }
     to {
       transform: translateX(-50%);
+    }
+  }
+  @keyframes marquee-reverse {
+    from {
+      transform: translateX(-50%);
+    }
+    to {
+      transform: translateX(0);
     }
   }
   @keyframes pulse-ring {
@@ -192,7 +201,7 @@
     opacity: 1 !important;
     transform: none !important;
   }
-  *,
+  *:not(.marquee-track),
   *::before,
   *::after {
     animation-duration: 0.001ms !important;

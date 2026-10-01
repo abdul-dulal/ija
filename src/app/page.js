@@ -16,6 +16,7 @@ import CTA from "@/components/CTA";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import HomeHero from "@/components/HomeHero";
+import Marque from "@/components/Marque";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
       <main>
         <HomeHero />
         {/* <Hero /> */}
+        <Marque />
         <Statistics />
         <About />
         <Team />
